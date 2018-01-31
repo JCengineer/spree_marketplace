@@ -9,6 +9,6 @@
 				<%= render :partial => 'spree/suppliers/supplier', collection: @suppliers.reject{|s| s.profile_picture.blank? } %>
 			</ul>
 		</div>
-		<%= paginate @suppliers
+		<%= paginate @suppliers %>
 	<% end %>
 </div>
